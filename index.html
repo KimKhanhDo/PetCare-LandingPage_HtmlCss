@@ -97,8 +97,81 @@
     <!-- Style -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+
   <body>
-    <h1>Hello</h1>
-    <p>Lorem ipsum dolor sit amet.</p>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <!-- Logo -->
+          <img src="./assets/icons/logo.svg" alt="Lucy" class="logo" />
+
+          <!-- Navbar -->
+          <nav class="navbar">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a href="#!" class="navbar__link">Home</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#!" class="navbar__link">About</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#!" class="navbar__link">Services & Rates</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#!" class="navbar__link">Reviews</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#!" class="navbar__link">Contacts Us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Header Actions -->
+          <div class="header-action">
+            <a href="#!" class="header-action__log-in">Log In</a>
+            <a href="#!" class="btn header-action__sign-up">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__body">
+          <!-- Hero media -->
+          <div class="hero__media">
+            <!-- Large Image & Deco -->
+            <div class="hero__img-wrapper">
+              <img src="./assets/img/hero-01.png" alt="" class="hero__img" />
+
+              <!-- Decorations -->
+              <img
+                src="./assets/icons/decor-01.svg"
+                alt=""
+                class="hero__decor hero__decor-left"
+              />
+              <img
+                src="./assets/icons/decor-02.svg"
+                alt=""
+                class="hero__decor hero__decor-right"
+              />
+            </div>
+            <!-- Small Image -->
+            <div class="hero__img-wrapper hero__img-wrapper-small">
+              <img
+                src="./assets/img/hero-02.png"
+                alt=""
+                class="hero__img hero__img-small"
+              />
+            </div>
+          </div>
+
+          <!-- Hero content -->
+          <section class="hero__content"></section>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

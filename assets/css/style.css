@@ -9,8 +9,10 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
+  background: #fffaf5;
 }
 
+/* Common */
 h1,
 h2,
 h3,
@@ -26,4 +28,131 @@ select,
 button {
   font-size: inherit;
   font-family: inherit;
+}
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  --height: 56px;
+
+  display: inline-block;
+  min-width: 130px;
+  height: var(--height);
+  line-height: var(--height);
+  border-radius: 99px;
+  border: 1px solid rgb(0, 9, 88, 0.7); /* Using rgb in case apply opacity */
+  color: #000958;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.btn {
+  opacity: 0.9;
+}
+
+/* Header */
+.header {
+  padding: 26px 0;
+}
+
+.header__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__list {
+  display: flex;
+}
+
+.navbar__link,
+.header-action__log-in {
+  padding: 8px 18px; /* use padding instead of gap to create more space for UX */
+  color: #5e6085;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.navbar__link:hover,
+.header-action__log-in:hover {
+  color: #000958;
+  text-shadow: 1px 0 0 currentColor; /* #000958 is currentColor */
+}
+
+.header-action__sign-up {
+  --height: 50px;
+
+  min-width: 118px;
+  line-height: var(--height);
+}
+
+/* Hero */
+.hero {
+  margin-top: 74px;
+}
+
+.hero__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__media {
+  display: flex;
+}
+
+.hero__img-wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 388px;
+  height: 488px;
+  border-radius: 16px;
+  background: #fe997b;
+  border: 3px solid #fff;
+}
+
+.hero__img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: inherit; /* inherit 16px from .hero__img-wrapper */
+}
+
+.hero__decor {
+  position: absolute;
+  z-index: -1;
+}
+
+.hero__decor-left {
+  left: -78px;
+  bottom: 10px;
+}
+
+.hero__decor-right {
+  right: -43px;
+  top: 17px;
+}
+
+.hero__img-wrapper-small {
+  align-self: flex-end;
+  width: 186px;
+  height: 244px;
+  margin: 0 0 -58px -24px;
+  border-radius: 16px;
+  border: 2px solid #fde0e2;
+  background: #faa7ad;
+}
+
+.hero__img-small {
 }

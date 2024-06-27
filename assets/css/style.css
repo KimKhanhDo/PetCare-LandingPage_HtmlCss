@@ -584,3 +584,135 @@ a {
   opacity: 1;
   bottom: -5px;
 }
+
+/* Service */
+.service {
+  margin-top: 190px;
+  padding: 68px 0 100px;
+  background: #fff6ed;
+}
+
+.service__top {
+  text-align: center;
+}
+
+.service__desc {
+  margin-bottom: 15px;
+  font-family: Sora, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #5e6085;
+}
+
+.service__body {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 65px;
+  margin-top: 70px;
+}
+
+.service-item {
+  width: 294px;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 188, 122, 0.26);
+  background: #fff;
+}
+
+/* Also can use row gap 24px at .service__column or this way to avoid add 24px in the first service-item */
+/* .service-item + .service-item --> avoid add 24px in the first service-item */
+.service-item + .service-item {
+  margin-top: 24px;
+}
+
+.service-item__heading {
+  position: relative;
+  padding-left: 12px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #000958;
+}
+
+.service-item__heading::before {
+  position: absolute;
+  /* use inset instead of t/r/l/b */
+  inset: 0 auto 0 0;
+  content: "";
+  display: inline-block;
+  width: 2px;
+  /* t0 b0 will create the height of content at the same time */
+  /* height: 22px; */
+  border-radius: 1px; /* half of width to create the border */
+  background: linear-gradient(90deg, #ff5b2e 0.39%, #ffa187 100.29%);
+}
+
+.service-item__desc {
+  margin-top: 18px;
+  width: 244px;
+  font-size: 1.4rem;
+  line-height: 1.71;
+  color: #656689;
+}
+
+.service-item__link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 24px;
+  font-family: Sora, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #34396a;
+}
+
+.service-item__link:hover {
+  text-decoration: underline;
+}
+
+.service-item__link::after {
+  content: url(../icons/arrow-up-right.svg);
+  margin: 1px 0 0 5px;
+}
+
+.service__media {
+  position: relative;
+  margin-top: 18px;
+}
+
+.service__media::after {
+  content: "";
+  position: absolute;
+  height: 350px;
+  /* if l0 r0, it equals to width: 100% */
+  left: 16px;
+  right: 16px;
+  bottom: 0;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+}
+
+.service__img {
+  /* Must use position to locate z-index */
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+}
+
+.service__cta-wrapper {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.service__cta {
+  min-width: 214px;
+  color: var(--primary-color);
+  border-color: currentColor; /* use any color value defined at color attribute */
+  font-weight: 500;
+}
+
+.service__cta:hover {
+  text-decoration: underline;
+}
